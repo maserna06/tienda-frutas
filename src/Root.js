@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom"
 
-import MainContainer from "./layout/MainContainer";
-import Header from "./layout/Header";
+import MainContainer from "./components/layout/MainContainer";
+import Header from "./components/layout/Header";
 
 export default function Root() {
     return (
