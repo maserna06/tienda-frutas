@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { createBrowserRouter, 
+  Navigate, 
   // Navigate,
    RouterProvider } from 'react-router-dom';
 
@@ -9,20 +10,26 @@ import ErrorPage from './ErrorPage';
 
 import Login from './components/user/Login';
 import ListaFrutas from './components/frutas/ListaFrutas';
+import {useContext} from 'react';
+import {UserContext} from './context/UserContext';
+import Root from './Root';
 
 function App() {
+  const {user} = useContext(UserContext);
 
   const router = createBrowserRouter([
     {
       path: '/',
-      element: <Login />,
-      // element: <Root />,
+      element: user ? <Root /> : <Login />,
       errorElement: <ErrorPage />,
       children: [
         {
+          index: true,
+          element: <Navigate to="/lista-frutas" replace />
+        },
+        {
           path: 'lista-frutas',
-          // element: user  ? <ListaFrutas /> : <Navigate to="/" replace />,
-          element: <ListaFrutas />
+          element: user  ? <ListaFrutas /> : <Navigate to="/" replace />,
         }
       ]
     }
