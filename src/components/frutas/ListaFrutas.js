@@ -2,7 +2,7 @@ import Table from 'react-bootstrap/Table';
 
 const ListaFrutas = () => {
     return (
-        <Table responsive>
+        <Table responsive hover className='mt-5'>
             <thead>
             <tr>
                 <th>#</th>
