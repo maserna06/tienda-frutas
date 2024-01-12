@@ -1,18 +1,14 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import { createBrowserRouter, 
-  Navigate, 
-  // Navigate,
-   RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, Navigate, RouterProvider } from 'react-router-dom';
 
-// import Root from './Root';
+import Root from './Root';
 import ErrorPage from './ErrorPage';
 
 import Login from './components/user/Login';
 import ListaFrutas from './components/frutas/ListaFrutas';
 import {useContext} from 'react';
 import {UserContext} from './context/UserContext';
-import Root from './Root';
 
 function App() {
   const {user} = useContext(UserContext);

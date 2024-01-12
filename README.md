@@ -1,3 +1,17 @@
+# Evitar problemas de diversos tipos para correr la app en modo desarrollo
+
+## Para evitar problemas de CORS en modo desarrollo se instalo la siguiente extension de Google Chrome
+
+Extension de Google Chrome para bloquear CORS: [Bloquear Cors en Chrome](https://chromewebstore.google.com/detail/cors-unblock/lfhmikememgdcahcdlaciloancbhjino).
+
+
+
+
+# -------------------------------------------------------------------------------
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
