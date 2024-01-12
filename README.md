@@ -2,17 +2,19 @@
 
 Aplicación que muestra la informacion de frutas en una tabla,
 la información es obtenida de una API publica.
+La app permite login de usuarios, navegación mediante rutas, tiene un diseño personalizado,
+es responsive y cuenta con validaciones de inicio de sesión.
 
 ## Tecnologias y recursos usados
 
 - ReactJS
 - React-Bootstrap
-- Git 
+- Git
+- Git Flow
+- Jest
 
 ## API Frutas 
 [API Frutas](https://www.fruityvice.com/api/fruit/)
-
-
 
 
 # Evitar problemas de diversos tipos para correr la app en modo desarrollo
@@ -22,9 +24,27 @@ la información es obtenida de una API publica.
 Extension de Google Chrome para bloquear CORS: [Bloquear Cors en Chrome](https://chromewebstore.google.com/detail/cors-unblock/lfhmikememgdcahcdlaciloancbhjino).
 
 
+# Correr la app
+
+npm start
+
+
+# Usuario y contraseña de ingreso
+
+Para ingresar a la app se usan los siguientes datos:
+
+email: admin@tiendafrutas.com'
+password: 123456
+
+La app cuenta con validaciones de inicio de secion en caso de ingresar un email y contraseña invalidos.
+
+
+
+
 
 
 # -------------------------------------------------------------------------------
+
 
 
 
