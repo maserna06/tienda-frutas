@@ -1,3 +1,20 @@
+# Información
+
+Aplicación que muestra la informacion de frutas en una tabla,
+la información es obtenida de una API publica.
+
+## Tecnologias y recursos usados
+
+- ReactJS
+- React-Bootstrap
+- Git 
+
+## API Frutas 
+[API Frutas](https://www.fruityvice.com/api/fruit/)
+
+
+
+
 # Evitar problemas de diversos tipos para correr la app en modo desarrollo
 
 ## Para evitar problemas de CORS en modo desarrollo se instalo la siguiente extension de Google Chrome
