@@ -39,13 +39,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "jest": {
-    "displayName": "Tienda Frutas",
-    "globals": {
-      "PROJECT_NAME": "Tienda Frutas TD"
-    },
-    "bail": 20,
-    "verbose": true
   }
 }

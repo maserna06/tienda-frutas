@@ -1,5 +1,5 @@
-import axios from "axios";
 import { useEffect, useState } from "react";
+import axios from "axios";
 import Table from "react-bootstrap/Table";
 import Fruta from "./Fruta";
 
@@ -38,45 +38,46 @@ const ListaFrutas = () => {
         // }
 
         setFrutas(data);
-    };
+    }
 
     async function asyncCall() {
       await getFruits();
     }
+
     asyncCall();
   }, []);
 
   return (
     <Table responsive hover className="mt-5">
-      <thead>
-        <tr>
-          <th>id</th>
-          <th>Imagen</th>
-          <th>Nombre</th>
-          <th>Familia</th>
-          <th>Género</th>
-          <th>Calorias</th>
-          <th>Carbohidratos</th>
-          <th>Grasa</th>
-          <th>Proteina</th>
-          <th>Azucar</th>
-          <th></th>
-        </tr>
-      </thead>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Imagen</th>
+                <th>Nombre</th>
+                <th>Familia</th>
+                <th>Género</th>
+                <th>Calorias</th>
+                <th>Carbohidratos</th>
+                <th>Grasa</th>
+                <th>Proteina</th>
+                <th>Azucar</th>
+                <th></th>
+            </tr>
+        </thead>
 
-      <tbody>
-        { frutas.length > 0 ?
-                frutas.map((fruta, index) =>
-                    <Fruta
-                        key={index}
-                        fruta={fruta}
-                        index={index}
-                    />
-                )
-            :
-                <></>
-        }
-      </tbody>
+        <tbody>
+            { frutas.length > 0 ?
+                    frutas.map((fruta, index) =>
+                        <Fruta
+                            key={index}
+                            fruta={fruta}
+                            index={index}
+                        />
+                    )
+                :
+                    <></>
+            }
+        </tbody>
     </Table>
   );
 };
