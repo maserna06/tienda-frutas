@@ -3,7 +3,6 @@ import { createContext, useEffect, useState } from "react";
 export const UserContext = createContext();
 
 export const UserContextProvider = ({children}) => {
-
     const [theUser, setUser] = useState(null);
     const [wait, setWait] = useState(false);
 
